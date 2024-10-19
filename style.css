@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    background: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 a {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+ul.social-links {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.social-links li {
+    margin: 15px 0;
+}
+
+ul.social-links li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    width: 100%;
+    background: rgba(40, 40, 40, 0.7);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    color: #f0f0f0;
+}
+
+ul.social-links li a i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+ul.social-links li a[href*="youtube"] {
+    background-color: rgba(200, 0, 0, 0.5);
+}
+
+ul.social-links li a[href*="discord"] {
+    background-color: rgba(114, 137, 218, 0.5);
+}
+
+ul.social-links li a[href*="twitter"] {
+    background-color: rgba(29, 161, 242, 0.5);
+}
+
+ul.social-links li a[href*="tiktok"] {
+    background-color: #101010;
+}
+
+ul.social-links li a[href*="instagram"] {
+    background-color: rgba(193, 53, 132, 0.5);
+}
+
+ul.social-links li a[href*="twitch"] {
+    background-color: rgba(100, 65, 165, 0.5);
+}
+
+ul.social-links li a:hover {
+    transform: scale(1.05);
+    filter: brightness(1.3);
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(30px);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    ul.social-links li a {
+        font-size: 1rem;
+    }
+
+    ul.social-links li a i {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    ul.social-links li a {
+        font-size: 0.9rem;
+    }
+
+    ul.social-links li a i {
+        font-size: 1.5rem;
+    }
+}
