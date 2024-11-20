@@ -17,9 +17,9 @@ body {
 }
 
 .container {
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
     background: #1e1e1e;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -27,8 +27,8 @@ body {
 }
 
 h1 a {
-    font-size: 3rem;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     color: white;
     text-decoration: none;
 }
@@ -43,26 +43,26 @@ ul.social-links {
 }
 
 ul.social-links li {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 ul.social-links li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 20px;
+    padding: 12px 15px;
     width: 100%;
     background: rgba(40, 40, 40, 0.7);
     border-radius: 8px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: background 0.3s ease, transform 0.3s ease;
     color: #f0f0f0;
 }
 
 ul.social-links li a i {
-    font-size: 2rem;
-    margin-right: 10px;
+    font-size: 1.6rem;
+    margin-right: 8px;
 }
 
 ul.social-links li a[href*="youtube"] {
@@ -74,7 +74,7 @@ ul.social-links li a[href*="discord"] {
 }
 
 ul.social-links li a[href*="twitter"] {
-    background-color: rgba(29, 161, 242, 0.5);
+    background-color: rgba(12, 20, 26, 0.829);
 }
 
 ul.social-links li a[href*="tiktok"] {
@@ -87,6 +87,10 @@ ul.social-links li a[href*="instagram"] {
 
 ul.social-links li a[href*="twitch"] {
     background-color: rgba(100, 65, 165, 0.5);
+}
+
+ul.social-links li a[href*="bsky"] {
+    background-color: rgba(0, 132, 255, 0.5);
 }
 
 ul.social-links li a:hover {
